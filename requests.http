@@ -1,0 +1,38 @@
+### Movies Index
+GET http://localhost:3000/movies.json
+
+
+### Favorites Index
+GET http://localhost:3000/favorites.json 
+### Favorites Create
+POST http://localhost:3000/favorites.json 
+Content-Type: application/json 
+
+{
+  "user_id": 3,
+  "movie_id": 1
+}
+
+
+
+
+### Users create (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json 
+
+{
+  "name": "Jules",
+  "email": "jules1@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json 
+Content-Type: application/json 
+
+{
+  "email": "jada@test.com",
+  "password": "password"
+}
+

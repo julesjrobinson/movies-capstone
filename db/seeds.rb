@@ -10,9 +10,9 @@ Movie.create(name: "Mulan", image_url: "https://lumiere-a.akamaihd.net/v1/images
 Movie.create(name: "Bridesmaids", image_url: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTv8N4Pfcss3Y10uosDdI7PbJ_br3I4-Pv7D-sXk9cVHr4J43I9", description: "Competition between the maid of honor and a bridesmaid, over who is the bride's best friend, threatens to upend the life of an out-of-work pastry chef.", genre: "Comedy")
 Movie.create(name: "Friday", image_url: "https://m.media-amazon.com/images/M/MV5BMTI0MDg1NzUzNl5BMl5BanBnXkFtZTYwNjUwMzQ5._V1_.jpg", description: "Craig is a bum..(whom believes he ISN'T a bum), that got fired on his day off from work.", genre: "Comedy")
 
-User.create(name: "Jada", email: "jada@test.com", password_digest: "password", image_url: "https://kuulpeeps.com/wp-content/uploads/2020/07/august-alsina-and-jada-relationship-1.jpg")
-User.create(name: "Meagan", email: "meagan@test.com", password_digest: "password", image_url: "https://pbs.twimg.com/media/C-WgQ9NWAAEUM6B.jpg")
-User.create(name: "Brad", email: "brad@test.com", password_digest: "password", image_url: "https://cdn.mos.cms.futurecdn.net/3t3bFTbFBygM8WSJFCZevc.jpg")
+User.create(name: "Jada", email: "jada@test.com", password: "password", image_url: "https://kuulpeeps.com/wp-content/uploads/2020/07/august-alsina-and-jada-relationship-1.jpg")
+User.create(name: "Meagan", email: "meagan@test.com", password: "password", image_url: "https://pbs.twimg.com/media/C-WgQ9NWAAEUM6B.jpg")
+User.create(name: "Brad", email: "brad@test.com", password: "password", image_url: "https://cdn.mos.cms.futurecdn.net/3t3bFTbFBygM8WSJFCZevc.jpg")
 
 Favorite.create(user_id: 2, movie_id: 4)
 Favorite.create(user_id: 3, movie_id: 3)
