@@ -1,0 +1,11 @@
+@favorites.map do |favorite|
+  {
+    id: favorite.id,
+    created_at: favorite.created_at,
+    updated_at: favorite.updated_at,
+    name: favorite.movie.name,
+    image_url: favorite.movie.image_url,
+    description: favorite.movie.description,
+    genre: favorite.movie.genre,
+  }
+end

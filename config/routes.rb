@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get "/movies" => "movies#index"
   get "/favorites" => "favorites#index"
   post "/favorites" => "favorites#create"
+  get "/favorites" => "favorites#show"
   post "users" => "users#create"
   post "/sessions" => "sessions#create"
 end
