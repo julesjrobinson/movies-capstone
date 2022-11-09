@@ -36,3 +36,12 @@ Content-Type: application/json
   "password": "password"
 }
 
+### Search All Movies
+
+GET http://localhost:3000/movies/search.json?t=the matrix
+
+
+
+### WatchMode
+GET https://api.watchmode.com/v1/sources/?apiKey=lhn1ehZ9TblSHpRqTfjr5gJhpvRuaIHXRue94nsF
+
