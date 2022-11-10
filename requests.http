@@ -1,6 +1,17 @@
 ### Movies Index
 GET http://localhost:3000/movies.json
 
+### Movies Create
+POST http://localhost:3000/movies.json
+Content-Type: application/json
+
+{
+  "name": "Kung-Fu Hustle",
+  "image_url": "https://upload.wikimedia.org/wikipedia/en/0/00/KungFuHustleHKposter.jpg",
+  "description": "The film tells the story of a murderous neighbourhood gang, a poor village with unlikely heroes, and an aspiring gangster's fierce journey to find his true self",
+  "genre": "Gangster Comedy"
+}
+
 
 ### Favorites Index
 GET http://localhost:3000/favorites.json 
