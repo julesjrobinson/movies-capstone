@@ -21,4 +21,8 @@ class MoviesController < ApplicationController
     # movies = data["movies"]
     render json: data
   end
+
+  def stream_search
+    response = HTTP.get()
+  end
 end
