@@ -26,3 +26,5 @@ class MoviesController < ApplicationController
     response = HTTP.get()
   end
 end
+
+#  make favorites destroy actions

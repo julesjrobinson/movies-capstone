@@ -16,4 +16,11 @@ class FavoritesController < ApplicationController
     @favorite = Favorite.find_by(id: params[:id])
     render template: "favorites/show"
   end
+
+  def destroy
+    favorite = Favorite.find_by(id: params[:id])
+    favorite.destroy
+    render json: { message: "Movie removed from 
+       favorites" }
+  end
 end

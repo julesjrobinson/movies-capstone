@@ -24,6 +24,8 @@ Content-Type: application/json
   "movie_id": 1
 }
 
+### Favorites Destroy 
+DELETE http://localhost:3000/favorites/1.json 
 
 
 
