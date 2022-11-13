@@ -5,12 +5,17 @@ class MoviesController < ApplicationController
   end
 
   def create
-    movie = Movie.create(
+    movie = Movie.find_by(
       name: params[:name],
-      image_url: params[:image_url],
-      description: params[:description],
-      genre: params[:genre],
     )
+    if !movie
+      movie = Movie.create(
+        name: params[:name],
+        image_url: params[:image_url],
+        description: params[:description],
+        genre: params[:genre],
+      )
+    end
 
     render json: movie.as_json
   end
@@ -23,8 +28,6 @@ class MoviesController < ApplicationController
   end
 
   def stream_search
-    response = HTTP.get()
+    response = HTTP.get("https://api.watchmode.com/v1/title/345534/&append_to_response=sources/?apiKey=lhn1ehZ9TblSHpRqTfjr5gJhpvRuaIHXRue94nsF")
   end
 end
-
-#  make favorites destroy actions
